@@ -16,9 +16,7 @@ var evenFib = function (limit){
 		if (isEven(sum)) {
 			evenSum += sum;
 		}
-		
 		console.log(sum);
-		
 		num1 = num2;
 		num2 = sum;
 	}
@@ -31,4 +29,4 @@ var isEven = function (number) {
 	}	
 };
 
-console.log("Sum: " + evenFib(4000000));
+console.log("Sum of the Even Fibonacci numbers: " + evenFib(4000000));
