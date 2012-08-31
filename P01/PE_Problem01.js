@@ -5,7 +5,6 @@
 	Problem 01 
 */
 "use strict";
-
 var timer = require("../timer.js");
 timer.startTimer();
 
