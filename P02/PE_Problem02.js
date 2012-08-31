@@ -5,6 +5,8 @@
 	Problem 02
 */
 "use strict";
+var timer = require("../timer.js");
+timer.startTimer();
 
 var evenFib = function (limit){
 	var num1 = 0;
@@ -30,3 +32,4 @@ var isEven = function (number) {
 };
 
 console.log("Sum of the Even Fibonacci numbers: " + evenFib(4000000));	
+timer.endTimer();
