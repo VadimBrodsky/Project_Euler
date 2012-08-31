@@ -15,7 +15,7 @@ var isPrime = function (number) {
 		}
 	}
 	return true;
-}
+};
 
 var isFactor = function (number, factor) {
 	if (number % factor === 0) {
@@ -23,20 +23,22 @@ var isFactor = function (number, factor) {
 	} else {
 		return false;
 	}
-}
+};
 
 var largestPrimeFactor = function (number) {
 	var found = 0;
-	for(var i=1; i <= number; i++) {
-		if(isPrime(i)) {
-			if(isFactor(number, i) && i > found) {
+	var simplifiedNum = number;
+	for(var i=1; i <= simplifiedNum; i++) {
+		if(isFactor(number, i)) {
+			simplifiedNum = number / i;
+			if (isPrime(i) && i > found) {
 				found = i;
-				console.log(found);
 			}
+			console.log("Factor: " + i + ", Simplified Number: " + simplifiedNum);
 		}
 	}
 	return found;
-}
+};
 
-console.log("Largest Prime Factor:" + largestPrimeFactor(600851475143));
+console.log("Largest Prime Factor: s" + largestPrimeFactor(600851475143));
 timer.endTimer();
