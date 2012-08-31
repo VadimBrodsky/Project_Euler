@@ -1,7 +1,7 @@
 /*
 	Project Euler
 	Vadim Brodsky
-	Thursday - August 31 2012
+	Friday - August 31 2012
 	Problem 02
 */
 "use strict";
@@ -29,4 +29,4 @@ var isEven = function (number) {
 	}	
 };
 
-console.log("Sum of the Even Fibonacci numbers: " + evenFib(4000000));
+console.log("Sum of the Even Fibonacci numbers: " + evenFib(4000000));	
