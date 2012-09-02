@@ -40,5 +40,5 @@ var largestPrimeFactor = function (number) {
 	return found;
 };
 
-console.log("Largest Prime Factor: s" + largestPrimeFactor(600851475143));
+console.log("Largest Prime Factor: " + largestPrimeFactor(600851475143));
 timer.endTimer();
