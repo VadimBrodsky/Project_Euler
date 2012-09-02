@@ -22,9 +22,9 @@ var isPal = function (number) {
 	return result;
 };
 
-var largestPal = function () {
-	var minLimit = 100;
-	var maxLimit = 999;
+var largestPal = function (digits) {
+	var minLimit = Math.pow (10, digits - 1);
+	var maxLimit = Math.pow (10, digits) - 1;
 	var palindrome = 0;
 	for (var i = minLimit; i <= maxLimit; i++) {
 		for (var j = minLimit; j <= maxLimit; j++) {
@@ -36,5 +36,5 @@ var largestPal = function () {
 	return palindrome;
 };
 
-console.log(largestPal());
+console.log(largestPal(3));
 timer.endTimer();
