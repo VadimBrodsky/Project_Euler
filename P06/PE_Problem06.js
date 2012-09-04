@@ -14,7 +14,7 @@ function sumOfSquares (range) {
 		sum = sum + Math.pow(i, 2);
 	}
 	return sum;
-};
+}
 
 function squareOfSum (range) {
 	var sum = 0;
@@ -22,7 +22,7 @@ function squareOfSum (range) {
 		sum = sum + i;
 	}
 	return Math.pow(sum, 2);
-};
+}
 
 function difference (range) {
 	return squareOfSum(range) - sumOfSquares(range);
