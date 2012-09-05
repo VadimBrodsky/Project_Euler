@@ -14,3 +14,4 @@ In my journey to learn programming I am working on the challanges of [Project Eu
 7. 2483
 8. 8
 9. 543
+10. 718977
