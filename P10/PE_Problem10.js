@@ -10,7 +10,12 @@ var timer = require("../timer.js");
 timer.startTimer();
 
 function isPrime (number) {
-	for (var i = 2 ; i < number; i++) {
+	if (number === 2) {
+		return true;
+	} else if (number % 2 === 0) {
+		return false;
+	}
+	for (var i = 3 ; i*i <= number; i+=2) {
 		if(number % i === 0) {
 			return false;
 		}
