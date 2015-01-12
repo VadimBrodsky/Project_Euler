@@ -14,7 +14,7 @@ def multiples_3_5_v1
 end
 
 
-# Appriach 2 - simple iterator
+# Approach 2 - simple iterator
 def multiples_3_5_v2
 	sum = 0
 
@@ -39,3 +39,5 @@ Benchmark.bm(5) do |bm|
 		multiples_3_5_v2
 	end
 end
+
+puts "Answer: #{multiples_3_5_v2}"
