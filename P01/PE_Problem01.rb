@@ -1,11 +1,6 @@
-# Problem 1: Multiples of 3 and 5
-
-# If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23.
-
-# Find the sum of all the multiples of 3 or 5 below 1000.
-
 require 'benchmark'
 
+# Approach 1 - using ranges and find_all
 def multiples_3_5_v1
 	multiples = (1...1000).find_all do |i| 
 		i % 3 == 0 || i % 5 == 0
@@ -19,6 +14,7 @@ def multiples_3_5_v1
 end
 
 
+# Appriach 2 - simple iterator
 def multiples_3_5_v2
 	sum = 0
 
