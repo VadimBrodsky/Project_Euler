@@ -1,9 +1,9 @@
 require 'benchmark'
 
 def palindrome?(number)
-  string1 = number.to_s
-  string2 = string1.reverse
-  if string1.eql? string2
+  string = number.to_s
+  
+  if string.eql? string.reverse
     return true
   else
     return false
